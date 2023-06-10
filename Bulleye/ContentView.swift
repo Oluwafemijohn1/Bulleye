@@ -41,7 +41,7 @@ struct ContentView: View {
           }
         },
         message: {
-          Text("This is my first alert!!")
+          Text("The slider's value is \(sliderValue).")
         }
       )
     }
