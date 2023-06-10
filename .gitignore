@@ -1,0 +1,36 @@
+# Xcode
+.DS_Store
+build/
+DerivedData/
+xcuserdata/
+
+# Swift Package Manager
+.build/
+
+# CocoaPods
+Pods/
+Podfile.lock
+*.xcworkspace
+
+# Carthage
+Carthage/Build/
+
+# IDE
+*.swp
+*.swo
+*~
+
+# Compiled source
+*.o
+*.pyc
+*.swiftdoc
+*.swiftmodule
+
+# Generated files
+*.hmap
+*.ipa
+*.xcarchive
+*.xcassets/Source/*.(swift|sdef)
+
+# Mac OS
+.DS_Store
