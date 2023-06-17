@@ -20,6 +20,7 @@ struct ContentView: View {
         .lineSpacing(4.0)
         .font(.footnote)
         .kerning(2.0)
+        .padding(.horizontal, 30)
       Text(String(game.target)).bold()
         .kerning(-1.0)
         .font(.largeTitle)
@@ -31,9 +32,17 @@ struct ContentView: View {
         Text("100")
           .bold()
       }
-      Button("Hit me") {
+      .padding()
+      Button("Hit me".uppercased()) {
         isAlertVisible = true
-      }.alert(
+      }
+      .padding(20.0)
+      .background(Color.blue)
+      .foregroundColor(.white)
+      .cornerRadius(21.0)
+      .bold()
+      .font(.title3)
+        .alert(
         "Hello there",
         isPresented: $isAlertVisible,
         actions: {
@@ -45,7 +54,7 @@ struct ContentView: View {
           let roundedValue = Int(sliderValue.rounded())
           Text("""
               The slider's value is \(sliderValue),
-          You Scored is \(game.points(sliderValue: roundedValue)) points this round.
+              You Scored is \(game.points(sliderValue: roundedValue)) points this round.
           """)
         }
       )
